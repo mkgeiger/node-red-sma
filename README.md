@@ -10,4 +10,8 @@ My goal was to develop a Node-Red flow consisting only of basic nodes, like udp-
 
 # Overview of the SMA Energy Meter/Home Manager flow
 
-!(/SMA_SunnyHomeManager2.0.png)
+![Home Manager flow](/SMA_SunnyHomeManager2.0.png)
+
+The SMA Home Manager sends per default every 1 second automatically a UDP multicast message to target address 239.12.255.254 and port 9522. Whoever client registers for listening to this multicast address can receive this message. The messages with a payload of exactly 608 bytes we are interested in. The UDP node needs to be configured accordingly as shown in the following picture.
+
+![UDP multicast](/udp.png)
