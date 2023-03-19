@@ -22,7 +22,12 @@ The SMA Home Manager sends per default every 1 second automatically a UDP multic
 
 My first approch has been using the Modbus TCP server of the SMA inverter. It turned out that this server is running very instable and needs from time to time a restart because of hang-up. Unfortunately the problem resolved only by a complete restart of the inverter every few days - impractical. The other solution has been using the Webconnect server of the device, which acts as a normal webserver. Over this Webconnect API all parameters including the parameters of the SMA Home Manager can be queried.
 
+
 For the first change node 2 rules (msg.headers and msg.payload) need to be defined as shown in the following picture. The string in the 2nd rule contains the user and password for the SMA inverter.
 
-
 ![First change node](/first_change.png)
+
+The 2 strings from the previous node serve as input for the HTTP login request node. It needs to be configured for POST method with the IP-address of the SMA inverter. Set the options of the node as shown in the following picture. The response of the HTTP login request is a session ID number (SID).
+
+![HTTP login request](/http_login_request.png)
+
