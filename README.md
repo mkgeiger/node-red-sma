@@ -1,6 +1,6 @@
 # Node-Red flow for SMA devices
 
-This project is for owners of the new generation SMA devices (Photovoltaic inverters and Home Managers), who want to control or read out values on their Node-Red based home automation system. The Node-Red server runs typically on a server which is placed in the local network, to which the SMA devices need also be connected. Most Node-Red nodes for SMA devices found in Internet are outdated and support only older devices, but not the newest generation of SMA devices. These circumstances let me develop a [SMA Node-Red flow](/flow_sma.json) Node-Red flow by myself to support those new SMA devices. Following SMA devices are supported:
+This project is for owners of the new generation SMA devices (Photovoltaic inverters and Home Managers), who want to control or read out values on their Node-Red based home automation system. The Node-Red server runs typically on a server which is placed in the local network, to which the SMA devices need also be connected. Most Node-Red nodes for SMA devices found in Internet are outdated and support only older devices, but not the newest generation of SMA devices. These circumstances let me develop a [SMA Node-Red flow](/flow_sma.json) by myself to support those new SMA devices. Following SMA devices are supported:
 
 * SMA Energy Meter (EMETER-20)
 * SMA Sunny Home Manager 2.0 (HM-2.0)
