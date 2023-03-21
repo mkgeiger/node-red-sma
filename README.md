@@ -31,3 +31,15 @@ The 2 strings from the previous node serve as input for the HTTP login request n
 
 ![HTTP login request](/http_login_request.png)
 
+The session ID number (SID) of the response is added to the message payload by the session ID function node. The message is the fed into the second change node. In this change node the SMA keys of the interesting PV-inverter values are configured, which is shown in the following picture. Some examples for SMA keys are:
+
+* Supplied power [W]: 6100_40463600
+* Absorbed power [W]: 6100_40463700
+* PV generation power [W]: 6100_0046C200
+* Present battery charge power [W]: 6100_00496900
+* Present battery discharge power [W]: 6100_00496A00
+* State of battery charge [%]: 6100_00295A00
+* Total yield energy [Wh]: 6400_00462400
+* Absorbed energy [Wh]: 6400_00462500
+
+![Second change node](/second_change.png)
