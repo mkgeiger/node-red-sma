@@ -47,3 +47,7 @@ The session ID number (SID) of the response is added to the message payload by t
 The 2 strings from the previous node serve as input for the HTTP getValues request node. It needs to be configured for POST method with the IP-address of the SMA inverter. Set the options of the node as shown in the following picture. The session ID number (SID) is a parameter for this HTTP request. The response of the HTTP getValues request is containing all requested values from the SMA inverter. The values are extracted from the response message by a following function node before displaying.
 
 ![HTTP getValues request](/http_getvalues_request.png)
+
+At the end the actual session needs to be closed again. The 2 strings from the previous change node serve as input for the HTTP logout request node. It needs to be configured for POST method with the IP-address of the SMA inverter. Set the options of the node as shown in the following picture. The session ID number (SID) is a parameter for this HTTP request.
+
+![HTTP logout request](/http_logout_request.png)
