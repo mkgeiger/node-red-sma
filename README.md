@@ -43,3 +43,7 @@ The session ID number (SID) of the response is added to the message payload by t
 * Absorbed energy [Wh]: 6400_00462500
 
 ![Second change node](/second_change.png)
+
+The 2 strings from the previous node serve as input for the HTTP getValues request node. It needs to be configured for POST method with the IP-address of the SMA inverter. Set the options of the node as shown in the following picture. The session ID number (SID) is a parameter for this HTTP request. The response of the HTTP getValues request is containing all requested values from the SMA inverter. The values are extracted from the response message by a following function node before displaying.
+
+![HTTP getValues request](/http_getvalues_request.png)
